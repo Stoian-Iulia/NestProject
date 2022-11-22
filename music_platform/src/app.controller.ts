@@ -1,4 +1,9 @@
 /* eslint-disable prettier/prettier */
-import { Controller } from '@nestjs/common';
-@Controller()
-export class AppController {}
+import { Controller, Get } from '@nestjs/common';
+@Controller('/api')
+export class AppController {
+    @Get()
+    gwtUsers() {
+        return 'GET ALL USERS'
+    }
+}
